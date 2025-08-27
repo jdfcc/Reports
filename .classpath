@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="con" path="net.sf.jasperreports.JR_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="com.jaspersoft.server.JRS_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/apache-maven-3.9.11/repo/com/linewell/gov/hoox/gov-hoox-sdk-eac/2.1-SNAPSHOT/gov-hoox-sdk-eac-2.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="D:/apache-maven-3.9.11/repo/com/linewell/gov/hoox/gov-hoox-utils/1.0.5-i18n/gov-hoox-utils-1.0.5-i18n.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

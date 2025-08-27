@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Reports</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>net.sf.jasperreports.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>net.sf.jasperreports.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>allow_transact_note/fr/allow_transact_note_fr.jasper</name>
+			<type>1</type>
+			<location>C:/Users/jdfcc/AppData/Local/Temp/e4a6170e-377a-422b-bbef-803a73e78ba8_docmentTemplate.rar.docmentTemplate.rar/models_fr/allow_transact_note_fr.jasper</location>
+		</link>
+		<link>
+			<name>allow_transact_note/fr/allow_transact_note_fr.jrxml</name>
+			<type>1</type>
+			<location>C:/Users/jdfcc/AppData/Local/Temp/e4a6170e-377a-422b-bbef-803a73e78ba8_docmentTemplate.rar.docmentTemplate.rar/models_fr/allow_transact_note_fr.jrxml</location>
+		</link>
+	</linkedResources>
+</projectDescription>

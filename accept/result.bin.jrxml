@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="accept_note" pageWidth="682" pageHeight="2800" columnWidth="682" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isIgnorePagination="true" uuid="5b16b16a-67c9-4c5e-8925-140a7cc60087">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="serviceName" class="java.lang.String"/>
+	<parameter name="projid" class="java.lang.String"/>
+	<parameter name="allField" class="java.lang.String"/>
+	<parameter name="handleChannel" class="java.lang.String"/>
+	<parameter name="com_FR" class="java.lang.String"/>
+	<parameter name="com_AR" class="java.lang.String"/>
+	<parameter name="NIN" class="java.lang.String"/>
+	<parameter name="Prenom_FR" class="java.lang.String"/>
+	<parameter name="Prenom_AR" class="java.lang.String"/>
+	<parameter name="Nom_FR" class="java.lang.String"/>
+	<parameter name="Nom_AR" class="java.lang.String"/>
+	<parameter name="Datedena_FR" class="java.lang.String"/>
+	<parameter name="Lieudena_AR" class="java.lang.String"/>
+	<parameter name="Lieudena_FR" class="java.lang.String"/>
+	<parameter name="applyTime" class="java.lang.String"/>
+	<parameter name="handleChannel_ar" class="java.lang.String"/>
+	<parameter name="sector_FR" class="java.lang.String"/>
+	<parameter name="sector_AR" class="java.lang.String"/>
+	<parameter name="logo" class="java.lang.String"/>
+	<parameter name="hints" class="java.util.Map"/>
+	<parameter name="BG_IMAGE_PATH" class="java.lang.String"/>
+	<parameter name="applicantName" class="java.lang.String"/>
+	<parameter name="applicantName_ar" class="java.lang.String"/>
+	<parameter name="applicantPhone" class="java.lang.String"/>
+	<parameter name="contactPhone" class="java.lang.String"/>
+	<parameter name="contact" class="java.lang.String"/>
+	<parameter name="contact_ar" class="java.lang.String"/>
+	<parameter name="lang" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="logo1" class="java.lang.String"/>
+	<background>
+		<band height="900">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+			<image scaleImage="FillFrame" isLazy="true" onErrorType="Blank" evaluationTime="Report">
+				<reportElement x="0" y="0" width="682" height="900" uuid="47d49aba-98b3-441d-813f-a2f72205e2bf"/>
+				<imageExpression><![CDATA[$P{BG_IMAGE_PATH}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="140" splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="730" splitType="Stretch">
+			<frame>
+				<reportElement x="21" y="0" width="640" height="700" uuid="e6f55c79-8e25-422b-9e0e-08a908a2cb9b"/>
+				<staticText>
+					<reportElement x="10" y="100" width="130" height="30" uuid="db7159d2-0170-43fd-a635-5eca6db1510b"/>
+					<textElement>
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[Temps de demande:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="150" width="150" height="30" uuid="ba9c62eb-6ecf-4ed7-a69b-57aeadf56759"/>
+					<textElement>
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[Source de la demande:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="200" width="92" height="30" uuid="3190c480-6e12-4371-9f2a-1e4bebd22406"/>
+					<textElement textAlignment="Left">
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[Le demandeur:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="250" width="220" height="30" uuid="ab1a1606-5d29-46a5-bd5f-d78c584a7cff"/>
+					<textElement>
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[Numéro de téléphone du demandeur:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="300" width="80" height="30" uuid="53f7faf5-3759-4dec-bc97-0370d08e3c38"/>
+					<textElement>
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Bénéficiaire:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="350" width="230" height="30" uuid="8c2314f5-b992-4ef2-8c32-e61d36990120"/>
+					<textElement>
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Numéro de téléphone du Bénéficiaire:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="160" y="30" width="340" height="30" uuid="9fd214c6-f4bf-49aa-b114-9b65536ad05d"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial" size="16"/>
+					</textElement>
+					<text><![CDATA[Demander un certificat de naissance normal]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="460" y="100" width="165" height="30" uuid="1c6efeac-9d81-4ad7-bf45-f568b6d3825d"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[وقت الإستلام:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="525" y="150" width="100" height="30" uuid="bc38248d-9354-4c96-9eb6-0884bef58e3d"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[مصدر الطلب:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="590" y="200" width="35" height="30" uuid="0d668bb7-f388-4f1f-abb9-f9e3d6c382d7"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[لطالب:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="540" y="250" width="85" height="30" uuid="1d045036-77b2-4780-92cc-1b121d9ac9f4"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[رقم هاتف الطالب:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="540" y="300" width="84" height="30" uuid="28abcfc7-f7d7-4e92-a316-5fb770aa409f"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[لشخص الموافق:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="490" y="350" width="135" height="30" uuid="c476e531-ae74-4c06-8e25-3e98205d04f0"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="13"/>
+					</textElement>
+					<text><![CDATA[رقم هاتف الشخص الموافق:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="160" y="530" width="299" height="30" uuid="61969dda-1557-4752-90c2-f5007cd935a7"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{projid} == null ? "-" : $P{projid})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="200" y="100" width="254" height="30" uuid="bdc1dba7-9a3d-42a5-94ed-465fb1ef034e"/>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font fontName="Arial" size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{applyTime} == null 
+? "-" 
+: (
+    "en-US".equalsIgnoreCase($P{lang}) 
+    ? new SimpleDateFormat("MM/dd/yyyy", java.util.Locale.ENGLISH).format(
+        new SimpleDateFormat("yyyy-MM-dd").parse($P{applyTime})
+      )
+    : "fr-FR".equalsIgnoreCase($P{lang}) 
+    ? new SimpleDateFormat("dd/MM/yyyy", java.util.Locale.FRENCH).format(
+        new SimpleDateFormat("yyyy-MM-dd").parse($P{applyTime})
+      )
+    : "ar-DZ".equalsIgnoreCase($P{lang}) 
+    ? new SimpleDateFormat("yyyy/MM/dd", new java.util.Locale("ar")).format(
+        new SimpleDateFormat("yyyy-MM-dd").parse($P{applyTime})
+      )
+    : new SimpleDateFormat("dd/MM/yyyy").format( 
+        new SimpleDateFormat("yyyy-MM-dd").parse($P{applyTime})
+      )
+  )]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="160" y="150" width="150" height="30" uuid="b769aaf3-a91e-4831-9472-6f4ff48a4425"/>
+					<textElement textAlignment="Left">
+						<font size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{handleChannel} == null ? "-" : $P{handleChannel})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="350" y="150" width="175" height="30" uuid="6c2cb13a-1e16-43b7-96c8-c957155d776f"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{handleChannel_ar}==null ? "-" :$P{handleChannel_ar})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="122" y="200" width="208" height="30" uuid="c2388955-a3f4-4db5-ba11-e9df35826180"/>
+					<textElement textAlignment="Left">
+						<font fontName="Arial" size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{applicantName} == null ? "-": $P{applicantName})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="350" y="200" width="209" height="30" uuid="423b6d81-a724-4fd5-a953-237f9c94e0eb"/>
+					<textElement textAlignment="Right">
+						<font size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{applicantName_ar} == null ? "-": $P{applicantName_ar})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="250" y="250" width="250" height="30" uuid="fda8bdec-bcca-4fd5-8822-af9b36e056c3"/>
+					<textElement textAlignment="Center">
+						<font size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{applicantPhone} == null ? "-": $P{applicantPhone})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="330" y="300" width="170" height="30" uuid="2d9de34f-0985-4709-a311-a39e41b5b058"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{contact_ar} == null || "".equals($P{contact_ar}.trim()) ? "-" : $P{contact_ar})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="130" y="0" width="394" height="30" uuid="11c370dd-847e-467f-8059-b7d8ded8f2d8"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="18"/>
+						<paragraph lineSpacing="Fixed"/>
+					</textElement>
+					<text><![CDATA[التقدم بطلب للحصول على شهادة ميلاد
+
+]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="280" y="350" width="170" height="30" uuid="d653c08e-34c1-45f0-a59e-c6c6de9e6c9f"/>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{contactPhone} == null || "".equals($P{contactPhone}.trim()) ? "-" : $P{contactPhone})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="120" y="300" width="170" height="30" uuid="c761887b-09e1-4263-b6af-20fa0bf3b469"/>
+					<textElement textAlignment="Center">
+						<font size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{contact} == null || "".equals($P{contact}.trim()) ? "-" : $P{contact})]]></textFieldExpression>
+				</textField>
+				<image>
+					<reportElement x="250" y="570" width="130" height="130" uuid="bcf9adcc-3cd2-4441-b36f-e694594800ca"/>
+					<imageExpression><![CDATA[com.linewell.gov.hoox.utils.qrcode.MatrixToImageWriter.toBufferedImage(
+            new com.google.zxing.qrcode.QRCodeWriter().encode(
+                "https://example.com?" +  // 这里替换成你的目标URL
+                "applyTime=" + ($P{applyTime} == null || $P{applyTime}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{applyTime}, "UTF-8")) +
+                "&Commune_AR=" + ($P{com_AR} == null || $P{com_AR}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{com_AR}, "UTF-8")) +
+                "&handleChannel=" + ($P{handleChannel} == null || $P{handleChannel}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{handleChannel}, "UTF-8")) +
+                "&handleChannel_ar=" + ($P{handleChannel_ar} == null || $P{handleChannel_ar}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{handleChannel_ar}, "UTF-8")) +
+                "&applicantName=" + ($P{applicantName} == null || $P{applicantName}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{applicantName}, "UTF-8")) +
+                "&applicantName_ar=" + ($P{applicantName_ar} == null || $P{applicantName_ar}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{applicantName_ar}, "UTF-8")) +
+                "&applicantPhone=" + ($P{applicantPhone} == null || $P{applicantPhone}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{applicantPhone}, "UTF-8")) +
+                "&contact=" + ($P{contact} == null || $P{contact}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{contact}, "UTF-8")) +
+                "&contact_ar=" + ($P{contact_ar} == null || $P{contact_ar}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{contact_ar}, "UTF-8")) +
+                "&contactPhone=" + ($P{contactPhone} == null || $P{contactPhone}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{contactPhone}, "UTF-8")) +
+                "&projid=" + ($P{projid} == null || $P{projid}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{projid}, "UTF-8")),
+                com.google.zxing.BarcodeFormat.QR_CODE,
+                1000,
+                1000,
+                $P{hints}
+            )
+        )]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

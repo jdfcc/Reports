@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="allow_transact_note" pageWidth="635" pageHeight="842" columnWidth="595" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" isSummaryWithPageHeaderAndFooter="true" uuid="4575f222-c7dc-46ae-b4df-cb6fbcf25b05">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="471"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="515"/>
+	<subDataset name="Dataset1" uuid="bc9cb25c-3e16-415c-921f-025df0456f16">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="serviceName" class="java.lang.String">
+		<parameterDescription><![CDATA[事项名称]]></parameterDescription>
+	</parameter>
+	<parameter name="projid" class="java.lang.String">
+		<parameterDescription><![CDATA[业务号]]></parameterDescription>
+	</parameter>
+	<parameter name="projectName" class="java.lang.String">
+		<parameterDescription><![CDATA[项目名称]]></parameterDescription>
+	</parameter>
+	<parameter name="belongDeptName" class="java.lang.String">
+		<parameterDescription><![CDATA[审批部门]]></parameterDescription>
+	</parameter>
+	<parameter name="acceptTime" class="java.lang.String">
+		<parameterDescription><![CDATA[受理时间]]></parameterDescription>
+	</parameter>
+	<parameter name="promiseDays" class="java.lang.String">
+		<parameterDescription><![CDATA[承诺办结天数]]></parameterDescription>
+	</parameter>
+	<parameter name="receiveUserName" class="java.lang.String">
+		<parameterDescription><![CDATA[材料接收人]]></parameterDescription>
+	</parameter>
+	<parameter name="deptName" class="java.lang.String">
+		<parameterDescription><![CDATA[受理网点]]></parameterDescription>
+	</parameter>
+	<parameter name="applicantName" class="java.lang.String">
+		<parameterDescription><![CDATA[申请人]]></parameterDescription>
+	</parameter>
+	<parameter name="contact" class="java.lang.String">
+		<parameterDescription><![CDATA[联系人]]></parameterDescription>
+	</parameter>
+	<parameter name="contactPhone" class="java.lang.String">
+		<parameterDescription><![CDATA[联系方式（受委托人）]]></parameterDescription>
+	</parameter>
+	<parameter name="applicantPhone" class="java.lang.String">
+		<parameterDescription><![CDATA[联系方式（申请人）]]></parameterDescription>
+	</parameter>
+	<parameter name="materials" class="com.linewell.gov.hoox.sdk.eac.bill.service.GenericDataSource">
+		<parameterDescription><![CDATA[材料列表]]></parameterDescription>
+	</parameter>
+	<parameter name="materials_2" class="com.linewell.gov.hoox.sdk.eac.bill.service.GenericDataSource" isForPrompting="false"/>
+	<parameter name="projpwd" class="java.lang.String">
+		<parameterDescription><![CDATA[办件密码]]></parameterDescription>
+	</parameter>
+	<parameter name="needPost" class="java.lang.String">
+		<parameterDescription><![CDATA[是否快递，0为否]]></parameterDescription>
+	</parameter>
+	<parameter name="evaluateUrl" class="java.lang.String">
+		<parameterDescription><![CDATA[好差评地址]]></parameterDescription>
+	</parameter>
+	<parameter name="isSpecial" class="java.lang.String">
+		<parameterDescription><![CDATA[是否允许发起特别程序（Y、N）]]></parameterDescription>
+	</parameter>
+	<parameter name="specialTime" class="java.lang.String">
+		<parameterDescription><![CDATA[特别程序时间]]></parameterDescription>
+	</parameter>
+	<parameter name="takeAddress" class="java.lang.String">
+		<parameterDescription><![CDATA[领证网点]]></parameterDescription>
+	</parameter>
+	<parameter name="infoType" class="java.lang.String">
+		<parameterDescription><![CDATA[办件类型]]></parameterDescription>
+	</parameter>
+	<parameter name="applyTypeCn" class="java.lang.String">
+		<parameterDescription><![CDATA[申报类型]]></parameterDescription>
+	</parameter>
+	<parameter name="contactMobile" class="java.lang.String">
+		<parameterDescription><![CDATA[联系人手机号码]]></parameterDescription>
+	</parameter>
+	<parameter name="receiveTime" class="java.lang.String">
+		<parameterDescription><![CDATA[收件时间]]></parameterDescription>
+	</parameter>
+	<parameter name="documentCode" class="java.lang.String">
+		<parameterDescription><![CDATA[文书编号]]></parameterDescription>
+	</parameter>
+	<parameter name="lang" class="java.lang.String">
+		<parameterDescription><![CDATA[联系人手机号码]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="27" width="250" height="30" uuid="2debeaf8-dbb1-4f4a-ab5b-aead34641221"/>
+				<textElement textAlignment="Center">
+					<font fontName="ChinaFSFontFamily" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Approval notice]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="396" y="66" width="200" height="30" uuid="d44049db-33cf-4c97-b5af-9cd8941b6498"/>
+				<textElement markup="html">
+					<font fontName="ChinaFSFontFamily" size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2" firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<u>" + ($P{projid} == null ? "-" : $P{projid}) + "</u>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="296" y="66" width="100" height="30" uuid="09ad07d8-267a-4fc1-9e86-b08eb9ecf27f"/>
+				<textElement>
+					<font fontName="ChinaFSFontFamily" size="13"/>
+				</textElement>
+				<text><![CDATA[Aplication No.:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="130" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="595" height="130" uuid="244c3de0-44d5-4098-ac06-1a83af552d9c"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textField>
+					<reportElement x="4" y="30" width="585" height="100" uuid="b904d41b-4a52-4789-8bc9-0d2c8d330689"/>
+					<textElement markup="html">
+						<font fontName="ChinaFSFontFamily" size="12" isBold="false"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" firstLineIndent="25"/>
+					</textElement>
+					<textFieldExpression><![CDATA["we inform you that, after verifying the information and materials concerning you application for the " + "<u>" + ($P{serviceName} == null ? "-" : $P{serviceName}) + "</u>"  +" on " + "<u>" + ($P{receiveTime} == null ? "-" : new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH).format(new SimpleDateFormat("yyyy-MM-dd").parse($P{receiveTime}))) + " </u>,"+ "it results that your application conforms with the acceptance conditions"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="5" y="11" width="585" height="16" uuid="44f9b014-80bb-453a-b391-39019fb32e1d"/>
+					<textElement markup="html">
+						<font fontName="ChinaFSFontFamily" size="12" isBold="false"/>
+						<paragraph lineSpacing="1_1_2" firstLineIndent="0"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<u>" + ($P{applicantName} == null ? "-" : $P{applicantName}) + "</u>"+ ":"]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="50">
+			<frame>
+				<reportElement x="0" y="0" width="595" height="50" uuid="1eecadb2-a69d-45c4-9ed1-f499fc0d6306"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<elementGroup/>
+			</frame>
+		</band>
+		<band height="105">
+			<frame>
+				<reportElement x="0" y="0" width="595" height="105" uuid="d1b15dde-da1b-4e55-b0f2-5693c7c1b7fe"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+			</frame>
+		</band>
+		<band height="200">
+			<frame>
+				<reportElement x="0" y="0" width="595" height="200" uuid="068320ab-f00f-452d-a81d-c120ed9b4fea"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textField>
+					<reportElement x="368" y="100" width="214" height="30" uuid="8f817370-f1a4-4744-836a-cb854266357a"/>
+					<textElement textAlignment="Left">
+						<font fontName="ChinaFSFontFamily" size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Date：" + (
+    "en-US".equalsIgnoreCase($P{lang}) 
+    ? new SimpleDateFormat("MM/dd/yyyy", java.util.Locale.ENGLISH).format(new Date())
+    : "fr-FR".equalsIgnoreCase($P{lang}) 
+    ? new SimpleDateFormat("dd/MM/yyyy", java.util.Locale.FRENCH).format(new Date())
+    : "ar-DZ".equalsIgnoreCase($P{lang}) 
+    ? new SimpleDateFormat("yyyy/MM/dd", new java.util.Locale("ar")).format(new Date())
+    : new SimpleDateFormat("dd/MM/yyyy").format(new Date())
+)
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="6" y="150" width="585" height="40" uuid="ce134f73-c25e-4227-b462-32c47fa51993"/>
+					<textElement>
+						<font fontName="ChinaFSFontFamily" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Note: Two copies of the approval notice are issued, one is delivered to the applicant, and the other is saved in the archive]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="367" y="30" width="215" height="70" uuid="2b4992ce-a189-4334-8c61-e7ab03c21439"/>
+					<textElement textAlignment="Left" markup="html">
+						<font fontName="ChinaFSFontFamily" size="12" isBold="false"/>
+						<paragraph lineSpacing="Single" firstLineIndent="0" rightIndent="30"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Approval authority：" + ($P{belongDeptName} == null ? "___________" : "<u>"+$P{belongDeptName}) + "</u>"]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="34"/>
+	</detail>
+</jasperReport>
