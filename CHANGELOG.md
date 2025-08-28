@@ -7,6 +7,20 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
+* 新增受理单据 ([93bc1df](https://github.com/jdfcc/Reports/commit/93bc1df67915ae98309e56c5617064bc034caf91))
+* test ([d0e686f](https://github.com/jdfcc/Reports/commit/d0e686fa8f81ff142a2f9d2db7c2165eaf926595))
+* update ([59b3257](https://github.com/jdfcc/Reports/commit/59b3257e49959af9bbedd392a93e580284e3152b))
+* update ([b2a8fb7](https://github.com/jdfcc/Reports/commit/b2a8fb777bfcfab948483345b741a3303bf5eabc))
+
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+##  (2025-08-28)
+
+
+### Features
+
 * test ([d0e686f](https://github.com/jdfcc/Reports/commit/d0e686fa8f81ff142a2f9d2db7c2165eaf926595))
 * update ([59b3257](https://github.com/jdfcc/Reports/commit/59b3257e49959af9bbedd392a93e580284e3152b))
 * update ([b2a8fb7](https://github.com/jdfcc/Reports/commit/b2a8fb777bfcfab948483345b741a3303bf5eabc))
