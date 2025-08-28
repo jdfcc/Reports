@@ -1,8 +1,9 @@
 {
+  "version": "1.0.1",
   "scripts": {
     "commit": "cz",
     "release": "standard-version",
-    "changelog": "standard-version --skip.bump --skip.tag --skip.commit"
+    "changelog": "standard-version --infile README.md --skip.bump --skip.tag --skip.commit"
   },
   "devDependencies": {
     "commitizen": "^4.3.1",
@@ -15,5 +16,7 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "version": "1.1.0"
+  "standard-version": {
+    "infile": "README.md"
+  }
 }
