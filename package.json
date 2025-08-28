@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "commit": "cz",
+    "release": "standard-version",
+    "changelog": "standard-version --skip.bump --skip.tag --skip.commit"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "standard-version": "^9.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
