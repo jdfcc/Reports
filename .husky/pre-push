@@ -2,7 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run changelog
-git add CHANGELOG.md
+git add README.md
 
 # 防止重复 commit 导致 push 卡住，加上 || true
 git commit -m "chore: update changelog [skip ci]" || true
