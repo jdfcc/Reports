@@ -20,7 +20,7 @@
 	<parameter name="projectName" class="java.lang.String">
 		<parameterDescription><![CDATA[项目名称]]></parameterDescription>
 	</parameter>
-	<parameter name="belongDeptName" class="java.lang.String">
+	<parameter name="ownerOrgName" class="java.lang.String">
 		<parameterDescription><![CDATA[审批部门]]></parameterDescription>
 	</parameter>
 	<parameter name="acceptTime" class="java.lang.String">
@@ -84,7 +84,7 @@
 	<parameter name="documentCode" class="java.lang.String">
 		<parameterDescription><![CDATA[文书编号]]></parameterDescription>
 	</parameter>
-	<parameter name="lang" class="java.lang.String">
+	<parameter name="RECEIPT_LANG" class="java.lang.String">
 		<parameterDescription><![CDATA[联系人手机号码]]></parameterDescription>
 	</parameter>
 	<queryString>
@@ -178,15 +178,7 @@
 					<textElement textAlignment="Left">
 						<font fontName="ChinaFSFontFamily" size="12"/>
 					</textElement>
-					<textFieldExpression><![CDATA["Date：" + (
-    "en-US".equalsIgnoreCase($P{lang}) 
-    ? new SimpleDateFormat("MM/dd/yyyy", java.util.Locale.ENGLISH).format(new Date())
-    : "fr-FR".equalsIgnoreCase($P{lang}) 
-    ? new SimpleDateFormat("dd/MM/yyyy", java.util.Locale.FRENCH).format(new Date())
-    : "ar-DZ".equalsIgnoreCase($P{lang}) 
-    ? new SimpleDateFormat("yyyy/MM/dd", new java.util.Locale("ar")).format(new Date())
-    : new SimpleDateFormat("dd/MM/yyyy").format(new Date())
-)
+					<textFieldExpression><![CDATA["Date: " + new SimpleDateFormat("MM/dd/yyyy", java.util.Locale.ENGLISH).format(new Date())
 ]]></textFieldExpression>
 				</textField>
 				<staticText>
@@ -202,7 +194,7 @@
 						<font fontName="ChinaFSFontFamily" size="12" isBold="false"/>
 						<paragraph lineSpacing="Single" firstLineIndent="0" rightIndent="30"/>
 					</textElement>
-					<textFieldExpression><![CDATA["Approval authority：" + ($P{belongDeptName} == null ? "___________" : "<u>"+$P{belongDeptName}) + "</u>"]]></textFieldExpression>
+					<textFieldExpression><![CDATA["Approval authority：" + ($P{ownerOrgName} == null ? "___________" : "<u>"+$P{ownerOrgName}) + "</u>"]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>

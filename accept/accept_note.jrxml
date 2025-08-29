@@ -32,6 +32,7 @@
 	<parameter name="lang" class="java.lang.String"/>
 	<parameter name="serviceName_EN" class="java.lang.String"/>
 	<parameter name="serviceName_AR" class="java.lang.String"/>
+	<parameter name="ACCEPT_URL" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -48,7 +49,7 @@
 	<title>
 		<band height="232" splitType="Stretch">
 			<textField>
-				<reportElement x="50" y="170" width="591" height="50" uuid="481549e5-cd89-45d6-a3db-287b698da481"/>
+				<reportElement x="70" y="170" width="591" height="50" uuid="481549e5-cd89-45d6-a3db-287b698da481"/>
 				<textElement textAlignment="Center">
 					<font fontName="Calibri" size="18"/>
 				</textElement>
@@ -242,25 +243,14 @@
 				<image>
 					<reportElement x="255" y="530" width="130" height="130" uuid="bcf9adcc-3cd2-4441-b36f-e694594800ca"/>
 					<imageExpression><![CDATA[com.linewell.gov.hoox.sdk.eac.utils.BitMatrixUtil.toBufferedImageTransparent(
-            new com.google.zxing.qrcode.QRCodeWriter().encode(
-                "https://example.com?" +  // 这里替换成你的目标URL
-                "applyTime=" + ($P{applyTime} == null || $P{applyTime}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{applyTime}, "UTF-8")) +
-                "&Commune_AR=" + ($P{com_AR} == null || $P{com_AR}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{com_AR}, "UTF-8")) +
-                "&handleChannel=" + ($P{handleChannel} == null || $P{handleChannel}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{handleChannel}, "UTF-8")) +
-                "&handleChannel_ar=" + ($P{handleChannel_ar} == null || $P{handleChannel_ar}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{handleChannel_ar}, "UTF-8")) +
-                "&applicantName=" + ($P{applicantName} == null || $P{applicantName}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{applicantName}, "UTF-8")) +
-                "&applicantName_ar=" + ($P{applicantName_ar} == null || $P{applicantName_ar}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{applicantName_ar}, "UTF-8")) +
-                "&applicantPhone=" + ($P{applicantPhone} == null || $P{applicantPhone}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{applicantPhone}, "UTF-8")) +
-                "&contact=" + ($P{contact} == null || $P{contact}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{contact}, "UTF-8")) +
-                "&contact_ar=" + ($P{contact_ar} == null || $P{contact_ar}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{contact_ar}, "UTF-8")) +
-                "&contactPhone=" + ($P{contactPhone} == null || $P{contactPhone}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{contactPhone}, "UTF-8")) +
-                "&projid=" + ($P{projid} == null || $P{projid}.trim().isEmpty() ? "" : java.net.URLEncoder.encode($P{projid}, "UTF-8")),
-                com.google.zxing.BarcodeFormat.QR_CODE,
-                1000,
-                1000,
-                $P{hints}
-            )
-        )]]></imageExpression>
+        new com.google.zxing.qrcode.QRCodeWriter().encode(
+            ($P{ACCEPT_URL} == null || $P{ACCEPT_URL}.trim().isEmpty() ? "" : $P{ACCEPT_URL}),
+            com.google.zxing.BarcodeFormat.QR_CODE,
+            1000,
+            1000,
+            $P{hints}
+        )
+    )]]></imageExpression>
 				</image>
 			</frame>
 		</band>

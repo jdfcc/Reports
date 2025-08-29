@@ -72,11 +72,8 @@
 	<parameter name="receiveTime" class="java.lang.String">
 		<parameterDescription><![CDATA[收件时间]]></parameterDescription>
 	</parameter>
-	<parameter name="belongDeptName" class="java.lang.String">
+	<parameter name="ownerOrgName" class="java.lang.String">
 		<parameterDescription><![CDATA[事项所属部门]]></parameterDescription>
-	</parameter>
-	<parameter name="lang" class="java.lang.String">
-		<parameterDescription><![CDATA[承诺时间]]></parameterDescription>
 	</parameter>
 	<queryString>
 		<![CDATA[]]>
@@ -133,8 +130,7 @@
           new java.text.SimpleDateFormat("yyyy-MM-dd").parse($P{receiveTime}.substring(0,10))
       )
   ) + "</u>"
-+ ", it results that your application does not meet all the acceptance requirements. Kindly find below the materials to supplement and correct."
-]]></textFieldExpression>
++ ", it results that your application does not meet all the acceptance requirements. Kindly find below the materials to supplement and correct."]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="4" y="9" width="585" height="16" uuid="a16579c7-b2b2-4a07-b7a7-844e05e3f51f"/>
@@ -261,8 +257,7 @@
 					<font fontName="Monospaced" size="12"/>
 					<paragraph lineSpacing="1_1_2" firstLineIndent="25"/>
 				</textElement>
-				<textFieldExpression><![CDATA["	Kindly submit the correction materials within "+ "<u> "+ ($P{specialTime} == null ? "1" : $P{specialTime}) + "</u> "+" working days from receiving this notice. If the correction is not made within the specified time, the application will be rejected and terminated."
-]]></textFieldExpression>
+				<textFieldExpression><![CDATA["	Kindly submit the correction materials within "+ "<u> "+ ($P{specialTime} == null ? "1" : $P{specialTime}) + "</u> "+" working days from receiving this notice. If the correction is not made within the specified time, the application will be rejected and terminated."]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="180">
@@ -286,15 +281,14 @@
 						<font fontName="ChinaFSFontFamily" size="12" isBold="false"/>
 						<paragraph lineSpacing="Single" firstLineIndent="0" rightIndent="30"/>
 					</textElement>
-					<textFieldExpression><![CDATA["Approval authority：" + ($P{belongDeptName} == null ? "___________" : "<u>"+$P{belongDeptName}) + "</u>"]]></textFieldExpression>
+					<textFieldExpression><![CDATA["Approval authority：" + ($P{ownerOrgName} == null ? "___________" : "<u>"+$P{ownerOrgName}) + "</u>"]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="331" y="99" width="250" height="30" uuid="fa171b54-90a6-4b91-a81b-e22c40eccab7"/>
 					<textElement textAlignment="Left">
 						<font fontName="ChinaFSFontFamily" size="12"/>
 					</textElement>
-					<textFieldExpression><![CDATA["Date: " + new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH).format(new Date())
-]]></textFieldExpression>
+					<textFieldExpression><![CDATA["Date: " + new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH).format(new Date())]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>

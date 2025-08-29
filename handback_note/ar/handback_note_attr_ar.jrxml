@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="handback_note_attr_ar" pageWidth="595" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="475" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="02e1d38e-4d0f-42b9-923e-9d32e0e83d8d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="material" class="java.lang.String">
+		<fieldDescription><![CDATA[材料名称]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="475" height="30" uuid="3c7c8a4e-60c1-44d4-8377-42e818d19c37"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="ChinaFSFontFamily" size="12"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" leftIndent="25"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}.toString() + "." + $F{material}.toString()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
