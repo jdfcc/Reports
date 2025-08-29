@@ -18,7 +18,7 @@
 	<parameter name="projectName" class="java.lang.String">
 		<parameterDescription><![CDATA[项目名称]]></parameterDescription>
 	</parameter>
-	<parameter name="belongDeptName" class="java.lang.String">
+	<parameter name="ownerOrgName" class="java.lang.String">
 		<parameterDescription><![CDATA[审批部门]]></parameterDescription>
 	</parameter>
 	<parameter name="acceptTime" class="java.lang.String">
@@ -192,7 +192,7 @@
 				</staticText>
 				<textField>
 					<reportElement x="290" y="41" width="284" height="69" uuid="7c777ada-5cbe-4f02-94a4-cc33e3da2f5b"/>
-					<textFieldExpression><![CDATA["Autorité d'approbation : " + ($P{belongDeptName} == null ? "___________" : "  " + $P{belongDeptName}) ]]></textFieldExpression>
+					<textFieldExpression><![CDATA["Autorité d'approbation : " + ($P{ownerOrgName} == null ? "___________" : "  " + $P{ownerOrgName})]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>
