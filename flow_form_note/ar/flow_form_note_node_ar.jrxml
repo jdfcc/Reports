@@ -57,15 +57,16 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Arial" size="14"/>
-					<paragraph leftIndent="250"/>
+					<paragraph leftIndent="10" rightIndent="5"/>
 				</textElement>
-				<textFieldExpression><![CDATA[($F{handleTime} == null ? "-" :
-    new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
-        .format(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse($F{handleTime}))
-)
-]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(
+  $F{handleTime} == null || $F{handleTime}.equals("")
+  ? "تاريخ -"
+  : "تاريخ " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
+                  .format(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse($F{handleTime}))
+)]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="0" y="0" width="474" height="30" uuid="9c031286-526f-4945-92e2-fa79f9106b31"/>
@@ -73,9 +74,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
 					<font fontName="Arial" size="14"/>
-					<paragraph leftIndent="250"/>
+					<paragraph leftIndent="10" rightIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[($F{userName} == null ? "-" : "مشغل:" +$F{userName})]]></textFieldExpression>
 			</textField>
