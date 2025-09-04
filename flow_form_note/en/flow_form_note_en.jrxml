@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="flow_form_note_en" pageWidth="635" pageHeight="842" columnWidth="595" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="20" isSummaryWithPageHeaderAndFooter="true" uuid="4575f222-c7dc-46ae-b4df-cb6fbcf25b05">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<parameter name="serviceName" class="java.lang.String">
+		<parameterDescription><![CDATA[事项名称]]></parameterDescription>
+	</parameter>
+	<parameter name="projid" class="java.lang.String">
+		<parameterDescription><![CDATA[业务号]]></parameterDescription>
+	</parameter>
+	<parameter name="applicantName" class="java.lang.String">
+		<parameterDescription><![CDATA[申请人]]></parameterDescription>
+	</parameter>
+	<parameter name="applicantPhone" class="java.lang.String">
+		<parameterDescription><![CDATA[申请人联系方式]]></parameterDescription>
+	</parameter>
+	<parameter name="address" class="java.lang.String">
+		<parameterDescription><![CDATA[联系地址]]></parameterDescription>
+	</parameter>
+	<parameter name="nodes" class="com.linewell.gov.hoox.sdk.eac.bill.service.GenericDataSource">
+		<parameterDescription><![CDATA[环节列表]]></parameterDescription>
+	</parameter>
+	<parameter name="contact" class="java.lang.String">
+		<parameterDescription><![CDATA[联系人]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="99" splitType="Stretch">
+			<staticText>
+				<reportElement x="140" y="28" width="290" height="30" uuid="607286dc-46ff-4fb9-8042-c33a94c6e200"/>
+				<textElement textAlignment="Center">
+					<font fontName="ChinaFontFamily" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Approval Transfer Orders]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="210" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="140" height="35" uuid="4e5def26-fc12-4a8f-98e3-f559c9237251"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Service Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="35" width="140" height="35" uuid="9d678b25-6ba2-4e60-95e3-7a68c5537fd8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aplication No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="140" height="35" uuid="053cb212-5ee8-4279-9dc3-34a6c2f1d676"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Applicant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="175" width="140" height="35" uuid="0cb8d2ad-d1d8-42e7-951d-91b20458f57a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact Address]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="0" width="454" height="35" uuid="78080ff2-6c67-4d81-8c5c-6ae5fb5d45cd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="12"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{serviceName} == null ? "-" : $P{serviceName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="35" width="454" height="35" uuid="dc58b872-eef8-4891-80eb-c532dcaf782f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="12"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{projid} == null ? "-" : $P{projid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="70" width="454" height="35" uuid="8afbec48-d946-4880-8cc0-b04fad34f361"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="12"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{applicantName} == null ? "-" : $P{applicantName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="175" width="454" height="35" uuid="f8bd0073-b1b9-43d1-af22-f3b06cede1ef"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="12"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{address} == null || $P{address}.equals(""))  ? "-" : $P{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="140" width="140" height="35" uuid="d4813b7d-8e4d-46e5-b29e-454b35d0f677"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Agent Phone]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="140" width="454" height="35" uuid="dc397435-7bdb-441d-8868-f4a11215b906"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="12"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{applicantPhone} == null  || $P{applicantPhone}.equals("")) ? "-" : $P{applicantPhone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="105" width="454" height="35" uuid="9692b13d-f956-4186-a4fa-39943aaa089d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="12"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contact} == null ? "-" : $P{contact}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="105" width="140" height="35" uuid="9ca9fb31-341f-49ca-bd18-b1ae2fa07588"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Agents]]></text>
+			</staticText>
+		</band>
+		<band height="40">
+			<elementGroup>
+				<subreport>
+					<reportElement x="0" y="0" width="594" height="40" uuid="9ebcf396-d4a0-45e6-a58a-f04def4f4e8f"/>
+					<dataSourceExpression><![CDATA[$P{nodes}]]></dataSourceExpression>
+					<subreportExpression><![CDATA["flow_form_note_node_en.jasper"]]></subreportExpression>
+				</subreport>
+			</elementGroup>
+		</band>
+		<band height="89">
+			<staticText>
+				<reportElement x="0" y="0" width="140" height="70" uuid="8304ce91-5f23-402c-9150-45d09d3c267c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Remark]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="0" width="454" height="70" uuid="51d75e84-508a-46a9-a484-9e34bdcdf924"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="ChinaFontFamily" size="12"/>
+					<paragraph leftIndent="10" rightIndent="10"/>
+				</textElement>
+				<text><![CDATA[1. For each processing step, the personnel name in charge, the date of processing (year, month, day) should be filled in, and signed ;
+2. The transfer form shall be transferred in a timely manner following the handling process ;]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

@@ -33,6 +33,7 @@
 	<parameter name="serviceName_EN" class="java.lang.String"/>
 	<parameter name="serviceName_AR" class="java.lang.String"/>
 	<parameter name="ACCEPT_URL" class="java.lang.String"/>
+	<parameter name="jasperImageHolder" class="com.linewell.gov.hoox.sdk.eac.utils.JasperImageHolder"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -42,7 +43,7 @@
 			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
 			<image scaleImage="FillFrame" isLazy="true" onErrorType="Blank" evaluationTime="Report">
 				<reportElement x="0" y="0" width="682" height="970" uuid="47d49aba-98b3-441d-813f-a2f72205e2bf"/>
-				<imageExpression><![CDATA[$P{BG_IMAGE_PATH}]]></imageExpression>
+				<imageExpression><![CDATA[$P{jasperImageHolder}.getImgPathByBase64("put img base64 here")]]></imageExpression>
 			</image>
 		</band>
 	</background>
@@ -51,14 +52,14 @@
 			<textField>
 				<reportElement x="70" y="170" width="591" height="50" uuid="481549e5-cd89-45d6-a3db-287b698da481"/>
 				<textElement textAlignment="Center">
-					<font fontName="Calibri" size="18"/>
+					<font fontName="Arial" size="18"/>
 				</textElement>
 				<textFieldExpression><![CDATA[($P{serviceName_EN} == null ? "-" : $P{serviceName_EN})]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="50" y="130" width="591" height="40" uuid="8a34040c-8fcb-43a3-938b-e07536470148"/>
 				<textElement textAlignment="Center">
-					<font fontName="Calibri" size="18"/>
+					<font fontName="Arial" size="18"/>
 				</textElement>
 				<textFieldExpression><![CDATA[($P{serviceName_AR} == null ? "-" : $P{serviceName_AR})]]></textFieldExpression>
 			</textField>
@@ -155,7 +156,7 @@
 				<textField>
 					<reportElement x="20" y="500" width="600" height="20" uuid="61969dda-1557-4752-90c2-f5007cd935a7"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Arial Black" size="9"/>
+						<font fontName="Arial" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[($P{projid} == null ? "-" : $P{projid})]]></textFieldExpression>
 				</textField>
@@ -187,7 +188,7 @@
 				<textField>
 					<reportElement x="150" y="70" width="200" height="30" uuid="b769aaf3-a91e-4831-9472-6f4ff48a4425"/>
 					<textElement textAlignment="Center">
-						<font size="16"/>
+						<font fontName="Arial" size="16"/>
 					</textElement>
 					<textFieldExpression><![CDATA[($P{handleChannel} == null ? "-" : $P{handleChannel})]]></textFieldExpression>
 				</textField>
@@ -208,35 +209,35 @@
 				<textField>
 					<reportElement x="350" y="120" width="240" height="30" uuid="423b6d81-a724-4fd5-a953-237f9c94e0eb"/>
 					<textElement textAlignment="Center">
-						<font size="16"/>
+						<font fontName="Arial" size="16"/>
 					</textElement>
 					<textFieldExpression><![CDATA[($P{applicantName_ar} == null ? "-": $P{applicantName_ar})]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="250" y="170" width="270" height="30" uuid="fda8bdec-bcca-4fd5-8822-af9b36e056c3"/>
 					<textElement textAlignment="Center">
-						<font size="16"/>
+						<font fontName="Arial" size="16"/>
 					</textElement>
 					<textFieldExpression><![CDATA[($P{applicantPhone} == null ? "-": $P{applicantPhone})]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="320" y="220" width="220" height="30" uuid="2d9de34f-0985-4709-a311-a39e41b5b058"/>
 					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font size="16"/>
+						<font fontName="Arial" size="16"/>
 					</textElement>
 					<textFieldExpression><![CDATA[($P{contact_ar} == null || "".equals($P{contact_ar}.trim()) ? "-" : $P{contact_ar})]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="240" y="270" width="260" height="30" uuid="d653c08e-34c1-45f0-a59e-c6c6de9e6c9f"/>
 					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font size="16"/>
+						<font fontName="Arial" size="16"/>
 					</textElement>
 					<textFieldExpression><![CDATA[($P{contactPhone} == null || "".equals($P{contactPhone}.trim()) ? "-" : $P{contactPhone})]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="90" y="220" width="219" height="30" uuid="c761887b-09e1-4263-b6af-20fa0bf3b469"/>
 					<textElement textAlignment="Center">
-						<font size="16"/>
+						<font fontName="Arial" size="16"/>
 					</textElement>
 					<textFieldExpression><![CDATA[($P{contact} == null || "".equals($P{contact}.trim()) ? "-" : $P{contact})]]></textFieldExpression>
 				</textField>
