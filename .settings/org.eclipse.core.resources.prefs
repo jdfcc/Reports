@@ -1,7 +1,14 @@
 eclipse.preferences.version=1
-encoding//accept/accept_note.jrxml=UTF-8
+encoding//accept/accept_note_base64.jrxml=UTF-8
+encoding//accept/accept_note_general.jrxml=UTF-8
+encoding//allow_transact_note/ar/allow_transact_note_ar.jrxml=UTF-8
+encoding//allow_transact_note/en/allow_transact_note_en.jrxml=UTF-8
 encoding//allow_transact_note/fr/allow_transact_note_fr.jrxml=UTF-8
+encoding//flow_form_note/en/flow_form_note_node_en.jrxml=UTF-8
+encoding//flow_form_note/fr/flow_form_note_node_fr.jrxml=UTF-8
+encoding//handback_note/ar/handback_note_ar.jrxml=UTF-8
 encoding//handback_note/en/handback_note_en.jrxml=UTF-8
 encoding//handback_note/fr/handback_note_fr.jrxml=UTF-8
+encoding//patch_note/ar/patch_note_ar.jrxml=UTF-8
 encoding//patch_note/en/patch_note_en.jrxml=UTF-8
 encoding//patch_note/fr/patch_note_fr.jrxml=UTF-8
