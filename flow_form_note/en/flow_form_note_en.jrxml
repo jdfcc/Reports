@@ -139,9 +139,10 @@
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
+					<font fontName="ChinaFontFamily" size="10" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
 				</textElement>
-				<text><![CDATA[Agent Phone]]></text>
+				<text><![CDATA[Processing officer Phone number]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="140" y="140" width="454" height="35" uuid="dc397435-7bdb-441d-8868-f4a11215b906"/>
@@ -173,7 +174,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Agents]]></text>
+				<text><![CDATA[Processing officer]]></text>
 			</staticText>
 		</band>
 		<band height="40">
@@ -194,7 +195,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="ChinaFontFamily" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Remark]]></text>
+				<text><![CDATA[Notes]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="140" y="0" width="454" height="70" uuid="51d75e84-508a-46a9-a484-9e34bdcdf924"/>

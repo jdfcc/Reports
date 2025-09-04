@@ -147,7 +147,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="ChinaFontFamily" size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Numéro de téléphone de l'agent]]></text>
+				<text><![CDATA[Numéro de téléphone de l'agent de traitement]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="140" y="140" width="454" height="35" uuid="dc397435-7bdb-441d-8868-f4a11215b906"/>
@@ -168,7 +168,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="ChinaFontFamily" size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Agent]]></text>
+				<text><![CDATA[Agent de traitement]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="140" y="105" width="454" height="35" uuid="63075c14-176f-491b-94d2-09e3e66de47d"/>

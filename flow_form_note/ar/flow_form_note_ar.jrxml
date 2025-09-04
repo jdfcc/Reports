@@ -61,7 +61,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[اسم المسألة]]></text>
+				<text><![CDATA[اسم الخدمة]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="474" y="35" width="120" height="35" uuid="9d678b25-6ba2-4e60-95e3-7a68c5537fd8"/>
@@ -71,7 +71,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[رَقَم الطلبة]]></text>
+				<text><![CDATA[رقم الطلب]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="474" y="70" width="120" height="35" uuid="053cb212-5ee8-4279-9dc3-34a6c2f1d676"/>
@@ -81,7 +81,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[شخص التقديم]]></text>
+				<text><![CDATA[مقدم الطلب]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="474" y="175" width="120" height="35" uuid="0cb8d2ad-d1d8-42e7-951d-91b20458f57a"/>
@@ -100,7 +100,7 @@
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Arial" size="12"/>
-					<paragraph leftIndent="10"/>
+					<paragraph leftIndent="10" rightIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{serviceName} == null ? "-" : $P{serviceName}]]></textFieldExpression>
 			</textField>
@@ -111,7 +111,7 @@
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Arial" size="12"/>
-					<paragraph leftIndent="10"/>
+					<paragraph leftIndent="10" rightIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{projid} == null ? "-" : $P{projid}]]></textFieldExpression>
 			</textField>
@@ -122,7 +122,7 @@
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Arial" size="12"/>
-					<paragraph leftIndent="10"/>
+					<paragraph leftIndent="10" rightIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{applicantName} == null ? "-" : $P{applicantName}]]></textFieldExpression>
 			</textField>
@@ -133,7 +133,7 @@
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Arial" size="12"/>
-					<paragraph leftIndent="10"/>
+					<paragraph leftIndent="10" rightIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[($P{address} == null || $P{address}.equals(""))  ? "-" : $P{address}]]></textFieldExpression>
 			</textField>
@@ -145,7 +145,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[رَقَم الهاتف الوكيل]]></text>
+				<text><![CDATA[رقم هاتف موظف المعالجة]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="0" y="140" width="474" height="35" uuid="dc397435-7bdb-441d-8868-f4a11215b906"/>
@@ -154,7 +154,7 @@
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Arial" size="12"/>
-					<paragraph leftIndent="10"/>
+					<paragraph leftIndent="10" rightIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[($P{contactMobile} == null  || $P{contactMobile}.equals("")) ? "-" : $P{contactMobile}]]></textFieldExpression>
 			</textField>
@@ -166,7 +166,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[الوكيل]]></text>
+				<text><![CDATA[موظف المعالجة	]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="0" y="105" width="474" height="35" uuid="63075c14-176f-491b-94d2-09e3e66de47d"/>
@@ -175,7 +175,7 @@
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Arial" size="12"/>
-					<paragraph leftIndent="10"/>
+					<paragraph leftIndent="10" rightIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{contact} == null ? "-" : $P{contact}]]></textFieldExpression>
 			</textField>
